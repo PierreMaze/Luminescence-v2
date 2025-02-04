@@ -1,16 +1,15 @@
-import lumiLogo from './assets/img/Lumi.svg';
+import FindUs from './components/FindUs';
+import { Footer } from './layout/Footer';
+import Header from './layout/Header.';
+import Home from './pages/Home.jsx';
 
-function App() {
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://luminescence33.com/" target="_blank">
-          <img src={lumiLogo} className="logo" alt="Luminescence33 logo" />
-        </a>
-      </div>
-      <h1>Luminescence</h1>
+      <Header />
+      <Home />
+      <FindUs />
+      <Footer />
     </>
   );
 }
-
-export default App;
